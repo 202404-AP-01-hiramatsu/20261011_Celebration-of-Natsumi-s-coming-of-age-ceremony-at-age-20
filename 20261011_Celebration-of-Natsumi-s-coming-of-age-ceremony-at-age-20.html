@@ -185,6 +185,24 @@ footer { margin-top: 1.5rem; padding-top: 1rem; color: var(--sub); font-size: .8
  .cover-content { padding: 1.5rem 0; }
 }
 
+
+/* Raised buttons with restrained Japanese tones */
+.actions { gap: 1rem; margin-bottom: .4rem; }
+.actions a { color: #64481f; background: linear-gradient(180deg, #fffaf0, #f3e7cf); border: 1px solid #cfb989; border-radius: 8px; font-weight: 700; letter-spacing: .035em; box-shadow: 0 4px 0 #c4ad7d, 0 8px 18px rgba(62,49,29,.13), inset 0 1px 0 rgba(255,255,255,.85); transition: transform .18s ease, box-shadow .18s ease; -webkit-tap-highlight-color: rgba(78,66,40,.12); }
+.actions a:first-child { color: #fffdf5; background: linear-gradient(180deg, #405e50, #30483e); border-color: #2b4337; box-shadow: 0 4px 0 #20372c, 0 8px 18px rgba(39,58,48,.18), inset 0 1px 0 rgba(255,255,255,.16); }
+.premium-actions a:first-child { color: #fffdf5; background: linear-gradient(180deg, #465e70, #344b5c); border-color: #304656; box-shadow: 0 4px 0 #233745, 0 8px 18px rgba(35,52,64,.18), inset 0 1px 0 rgba(255,255,255,.16); }
+.actions a:focus-visible { outline: 3px solid #82632f; outline-offset: 6px; }
+@media (hover:hover) {
+ .actions a:hover { color: #64481f; filter: none; transform: translateY(-2px); box-shadow: 0 6px 0 #c4ad7d, 0 11px 22px rgba(62,49,29,.18), inset 0 1px 0 rgba(255,255,255,.85); }
+ .actions a:first-child:hover { color: #fffdf5; box-shadow: 0 6px 0 #20372c, 0 11px 22px rgba(39,58,48,.22), inset 0 1px 0 rgba(255,255,255,.16); }
+ .premium-actions a:first-child:hover { box-shadow: 0 6px 0 #233745, 0 11px 22px rgba(35,52,64,.22), inset 0 1px 0 rgba(255,255,255,.16); }
+}
+.actions a:active { transform: translateY(2px); box-shadow: 0 2px 0 #c4ad7d, 0 4px 10px rgba(62,49,29,.1), inset 0 1px 0 rgba(255,255,255,.65); }
+.actions a:first-child:active { box-shadow: 0 2px 0 #20372c, 0 4px 10px rgba(39,58,48,.14), inset 0 1px 0 rgba(255,255,255,.16); }
+.premium-actions a:first-child:active { box-shadow: 0 2px 0 #233745, 0 4px 10px rgba(35,52,64,.14), inset 0 1px 0 rgba(255,255,255,.16); }
+@media (prefers-reduced-motion:reduce) { .actions a { transition: none; } .actions a:hover,.actions a:active { transform: none; } }
+@media print { .actions a,.actions a:first-child,.premium-actions a:first-child { box-shadow: none; background: white; color: #253a44; border: 1px solid #8d928b; } }
+
 </style>
 </head>
 <body>
